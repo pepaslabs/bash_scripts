@@ -5,7 +5,7 @@ set -x
 
 badblocks \
 -w \
--p 8 \
+-p 3 \
 -s \
 -v \
 -o log_$(date +%s).badblocks \
