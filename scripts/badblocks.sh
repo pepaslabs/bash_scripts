@@ -3,9 +3,10 @@
 set -eu -o pipefail
 set -x
 
+nice ionice -c3 \
 badblocks \
 -w \
--p 8 \
+-p 1 \
 -s \
 -v \
 -o log_$(date +%s).badblocks \
